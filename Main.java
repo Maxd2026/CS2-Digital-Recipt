@@ -1,6 +1,8 @@
 
 
         public class Main {
+    import java.util.Scanner;
+
   public static void main(String [] args) {
    String highSchool = "Birch Wathen Lenox";
    double drinkPrice = 1.50;
@@ -12,7 +14,8 @@
    int candyOrdered = (int) (Math.random() * 2) + 1;
    int hotdogOrdered = (int) (Math.random() * 2) + 1;
    int hamburgerOrdered = (int) (Math.random() * 2) + 1;
-
+   double cost = + hamburgerOrdered * hamburgerPrice + candyOrdered * candyPrice + hotdogOrdered * hotDogPrice + drinksOrdered * drinkPrice;
+   double totalCost = (cost * 1.08) + 1.00;
 
 
      // RECEIPT PRINTOUT SECTION
@@ -26,6 +29,9 @@
      System.out.println("*     Hamburger ......$ " + hamburgerPrice + "          *");     
      System.out.println("*                                    *");    
      System.out.println("**************************************");
+
+     System.out.println("*   Total Cost ........*" + totalCost);
+     System.out.println("***********************");
 
   }
   }
